@@ -5,3 +5,7 @@ steps:
     image: maven:3.5.2-jdk-8-alpine
     commands:
      - mvn -Dmaven.repo.local=/codefresh/volume/m2_repository package
+  BuildMyImage:
+    title: Building My Docker image
+    image_name: my-app-image
+    type: build
